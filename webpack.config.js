@@ -1,5 +1,6 @@
 module.exports = {
-  entry: './app/index.js',
+  // entry: ['webpack-dev-server/client?http://localhost:3000', './app/index.js'],
+  entry: "./app/index.js",
   module: {
     loaders: [
         // That will tell Webpack that EaselJS refers to `window` with `this` and exports `window.createjs`.

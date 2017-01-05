@@ -4,7 +4,9 @@
   "description": "the H5 show for celebrating yayao's full-year",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "build": "webpack",
+    "start": "node_modules/.bin/webpack-dev-server --port=3000  --content-base dist/"
   },
   "keywords": [
     "yaoyao",
@@ -17,6 +19,7 @@
   },
   "devDependencies": {
     "exports-loader": "^0.6.3",
-    "imports-loader": "^0.7.0"
+    "imports-loader": "^0.7.0",
+    "webpack-dev-server": "^1.16.2"
   }
 }
