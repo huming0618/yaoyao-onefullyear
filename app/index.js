@@ -13,17 +13,17 @@ var stage = (function(){
 
 var scense = {};
 scense.one = (function(){
-    var i, count = 100;
+    const count = 10;
     var bubbles = [];
-    for(i=0;i<count;i++){
+
+    Array.from({"length":count}).forEach((x, i)=>{
         var x = Math.random() * 400;
         var y = Math.random() * 30 + 400;
         var opt = {"c":"red", "x": x, "y": y};
         var b = bubble.create(opt);
         bubbles.push(b);
         stage.addChild(b);
-    }
-
+    })
 
     var tick = function(e){
         bubbles.forEach(x=>{
